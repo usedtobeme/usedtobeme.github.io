@@ -1,0 +1,273 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Iki Amortegui",
+    "label": "Dynamic Front End Engineer",
+    "email": "iki.amortegui@gmail.com",
+    "phone": "+57 300 282 9854",
+    "url": "",
+    "summary": "11 years of experience in software engineering, specializing in frontend architectural improvements using React and TypeScript. Leading teams and building scalable component libraries while advancing efficiency through mentoring and process optimization.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Bogota",
+      "countryCode": "CO",
+      "region": "Colombia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "i-amortegui",
+        "url": "https://linkedin.com/in/i-amortegui"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Sauron Systems",
+      "position": "Senior Software Engineer",
+      "url": "",
+      "startDate": "2025-08-01",
+      "endDate": "",
+      "summary": "Leading frontend development of greenfield projects with real-time media streaming capabilities.",
+      "highlights": [
+        "Spearheaded the design and implementation of two greenfield frontend projects in React + TypeScript, using real-time media and events streaming with an average velocity that exceeded expectations",
+        "Integrated automated CI/CD processes into the development lifecycle, harnessing GitHub Actions and AWS services to maintain deployment consistency and code quality",
+        "Collaborated with designers to refine user interfaces, aligning accessibility standards and visual consistency across applications"
+      ],
+      "location": "Remote"
+    },
+    {
+      "name": "Varsity Tutors",
+      "position": "Staff Software Engineer",
+      "url": "",
+      "startDate": "2024-08-01",
+      "endDate": "2025-08-01",
+      "summary": "Led frontend architectural improvements and AI development while mentoring engineering teams.",
+      "highlights": [
+        "Spearheaded frontend architectural improvements in React + TypeScript, significantly improving performance and maintainability",
+        "Led development of LLM-based AI agents and chat UIs, including prompt and context management",
+        "Partnered closely with Product and Design to deliver user-centric solutions in a remote-first async environment",
+        "Maintained scalable component libraries adhering to design system and accessibility best practices",
+        "Mentored and provided ongoing coaching to a distributed engineering team of 6 through weekly 1:1 sessions over 12 months, accelerating adoption of TypeScript and React patterns while reducing code review turnaround by 40%",
+        "Directed implementation of automated testing pipelines using Jest and Playwright, ensuring product quality throughout automated daily releases and reducing escaped bugs by 25%"
+      ],
+      "location": "Remote"
+    },
+    {
+      "name": "Publicis Sapient",
+      "position": "Senior Manager Experience Engineering",
+      "url": "",
+      "startDate": "2024-03-01",
+      "endDate": "2024-08-01",
+      "summary": "Led experience engineering initiatives focusing on accessibility, architecture, and team development.",
+      "highlights": [
+        "Created collaborative peer learning sessions and practical hands-on labs to advance team proficiency in accessibility, modular architecture, and design systems",
+        "Strengthened the technical vision for experience engineering by evaluating legacy technology stacks and guiding teams toward robust, scalable frontend solutions using React and TypeScript",
+        "Established a peer review framework, leveraging GitHub workflows, to maintain high code quality and streamline collaboration across distributed engineering groups"
+      ],
+      "location": "Bogota, Colombia"
+    },
+    {
+      "name": "Gloss Genius",
+      "position": "Staff Software Engineer",
+      "url": "",
+      "startDate": "2023-04-01",
+      "endDate": "2024-01-01",
+      "summary": "Developed highly interactive interfaces and enhanced platform performance across React and React Native.",
+      "highlights": [
+        "Drove the development of highly interactive interfaces with React and React Native",
+        "Guided implementation of pixel-perfect designs and elevated frontend performance metrics",
+        "Introduced scalable testing strategies and accessibility enhancements across platforms"
+      ],
+      "location": "Remote"
+    },
+    {
+      "name": "adidas",
+      "position": "Director Software Engineering",
+      "url": "",
+      "startDate": "2020-03-01",
+      "endDate": "2021-07-01",
+      "summary": "Directed technical strategy for digital platforms and led multiple agile engineering teams.",
+      "highlights": [
+        "Drove technical direction for mission-critical digital platforms by implementing modular frontend architectures with React and TypeScript",
+        "Evaluated existing solutions and applied advanced architectural patterns to streamline codebases and ensure alignment with organization-wide design systems",
+        "Facilitated alignment between business objectives and software engineering processes by collaborating closely with key stakeholders and applying effective communication strategies",
+        "Directed capacity planning efforts across three agile teams, ensuring sustainable resource allocation and reducing project delivery bottlenecks by 30% over a 12-month portfolio of enterprise software projects"
+      ],
+      "location": "Bogota, Colombia"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universidad Nacional de Colombia",
+      "url": "",
+      "area": "Philosophy",
+      "studyType": "Major",
+      "startDate": "",
+      "endDate": "2012-12-31",
+      "score": "",
+      "courses": [],
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "institution": "Pontifical Xavierian University",
+      "url": "",
+      "area": "Web Applications and SOA",
+      "studyType": "Diploma",
+      "startDate": "",
+      "endDate": "2011-12-31",
+      "score": "",
+      "courses": [],
+      "location": "Bogota, Colombia"
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Core Technologies",
+      "level": "Expert",
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Redux",
+        "Jotai",
+        "Module Federation"
+      ]
+    },
+    {
+      "name": "Design & Accessibility",
+      "level": "Expert",
+      "keywords": ["Accessibility", "Design Systems", "Storybook", "SVG"]
+    },
+    {
+      "name": "DevOps & Architecture",
+      "level": "Advanced",
+      "keywords": ["CI/CD", "Git", "Webpack", "PM2", "Docker", "Microfrontends"]
+    },
+    {
+      "name": "Leadership & Collaboration",
+      "level": "Expert",
+      "keywords": [
+        "Cross-functional collaboration",
+        "Product Management",
+        "Design collaboration",
+        "Data collaboration",
+        "Mentoring",
+        "Async Remote Work"
+      ]
+    },
+    {
+      "name": "AI & Machine Learning",
+      "level": "Intermediate",
+      "keywords": ["OpenAI", "Bedrock", "Vertex AI", "LangFuse"]
+    },
+    {
+      "name": "Backend & APIs",
+      "level": "Advanced",
+      "keywords": ["GraphQL", "REST", "Node.js", "AWS"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "WebGL & Rich Media",
+      "description": "Real-time media streaming and interactive graphics",
+      "highlights": [
+        "Real-time media and events streaming",
+        "Highly interactive interface development"
+      ],
+      "keywords": ["WebGL", "Real-time streaming", "Interactive graphics"],
+      "startDate": "",
+      "endDate": "",
+      "url": "",
+      "roles": ["Developer"],
+      "entity": "",
+      "type": "application"
+    },
+    {
+      "name": "Design Systems",
+      "description": "UI consistency and accessibility standards",
+      "highlights": [
+        "Scalable component libraries",
+        "Accessibility best practices",
+        "Organization-wide design system alignment"
+      ],
+      "keywords": ["Design Systems", "Accessibility", "Component Libraries"],
+      "startDate": "",
+      "endDate": "",
+      "url": "",
+      "roles": ["Lead Developer"],
+      "entity": "",
+      "type": "library"
+    },
+    {
+      "name": "State Management",
+      "description": "Frontend architectural improvements and performance",
+      "highlights": [
+        "Modular frontend architectures",
+        "Advanced architectural patterns",
+        "Performance optimization"
+      ],
+      "keywords": ["React", "TypeScript", "State Management", "Architecture"],
+      "startDate": "",
+      "endDate": "",
+      "url": "",
+      "roles": ["Architect"],
+      "entity": "",
+      "type": "application"
+    },
+    {
+      "name": "Leadership",
+      "description": "Team mentoring and process improvements",
+      "highlights": [
+        "Team mentoring and coaching",
+        "Process optimization",
+        "Capacity planning"
+      ],
+      "keywords": ["Leadership", "Mentoring", "Process Improvement"],
+      "startDate": "",
+      "endDate": "",
+      "url": "",
+      "roles": ["Team Lead"],
+      "entity": "",
+      "type": "management"
+    },
+    {
+      "name": "Observability & D3",
+      "description": "Testing pipelines and quality metrics",
+      "highlights": [
+        "Automated testing pipelines",
+        "Performance metrics",
+        "Quality assurance"
+      ],
+      "keywords": ["Testing", "D3", "Observability", "Quality Metrics"],
+      "startDate": "",
+      "endDate": "",
+      "url": "",
+      "roles": ["Developer"],
+      "entity": "",
+      "type": "application"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2025-11-14T00:00:00.000Z"
+  }
+}
