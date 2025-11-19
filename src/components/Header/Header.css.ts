@@ -1,12 +1,12 @@
+import { tokens } from '@ui/tokens.css';
 import { style } from '@vanilla-extract/css';
-import { vars } from '../../styles/theme.css';
 
 export const header = style({
-  position: 'sticky',
+  position: 'fixed',
   top: 0,
   zIndex: 50,
   width: '100%',
-  backgroundColor: vars.color.background,
+  backgroundColor: tokens.colors.semantic.background,
   backdropFilter: 'blur(8px)',
 });
 
@@ -14,7 +14,7 @@ export const container = style({
   display: 'flex',
   height: '3.5rem',
   alignItems: 'center',
-  justifyContent: 'flex-end',
+  justifyContent: 'space-between',
   margin: '0 auto',
   padding: '0 1.5rem',
 });
@@ -35,13 +35,13 @@ export const brandLink = style({
   alignItems: 'center',
   gap: '0.5rem',
   textDecoration: 'none',
-  color: vars.color.foreground,
+  color: tokens.colors.semantic.foreground,
 });
 
 export const brandText = style({
   display: 'none',
-  fontWeight: 'bold',
-  fontSize: vars.fontSize.xl,
+  fontWeight: tokens.typography.fontWeight.bold,
+  fontSize: tokens.typography.fontSize.xl,
   '@media': {
     '(min-width: 640px)': {
       display: 'inline-block',
@@ -72,26 +72,26 @@ export const navigationLink = style({
   width: 'max-content',
   alignItems: 'center',
   justifyContent: 'center',
-  borderRadius: vars.radius.md,
+  borderRadius: tokens.borderRadius.md,
   backgroundColor: 'transparent',
-  padding: `${vars.spacing.sm} ${vars.spacing.md}`,
-  fontSize: vars.fontSize.sm,
+  padding: `${tokens.spacing.sm} ${tokens.spacing.md}`,
+  fontSize: tokens.typography.fontSize.sm,
   fontWeight: '500',
   textDecoration: 'none',
-  color: vars.color.foreground,
+  color: tokens.colors.semantic.foreground,
   transition: 'all 0.2s ease',
   cursor: 'pointer',
   outline: 'none',
-  gap: vars.spacing.sm,
+  gap: tokens.spacing.sm,
 
   ':hover': {
-    backgroundColor: vars.color.accent,
-    color: vars.color.accentForeground,
+    backgroundColor: tokens.colors.semantic.accent,
+    color: tokens.colors.semantic.accentForeground,
   },
 
   ':focus': {
-    backgroundColor: vars.color.accent,
-    color: vars.color.accentForeground,
+    backgroundColor: tokens.colors.semantic.accent,
+    color: tokens.colors.semantic.accentForeground,
     outline: 'none',
   },
 
@@ -107,22 +107,22 @@ export const iconOnlyLink = style({
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
-  borderRadius: vars.radius.md,
+  borderRadius: tokens.borderRadius.md,
   backgroundColor: 'transparent',
-  padding: vars.spacing.xs,
+  padding: tokens.spacing.xs,
   textDecoration: 'none',
-  color: vars.color.foreground,
+  color: tokens.colors.semantic.foreground,
   cursor: 'pointer',
   outline: 'none',
 
   ':hover': {
-    backgroundColor: vars.color.accent,
-    color: vars.color.accentForeground,
+    backgroundColor: tokens.colors.semantic.accent,
+    color: tokens.colors.semantic.accentForeground,
   },
 
   ':focus': {
-    backgroundColor: vars.color.accent,
-    color: vars.color.accentForeground,
+    backgroundColor: tokens.colors.semantic.accent,
+    color: tokens.colors.semantic.accentForeground,
     outline: 'none',
   },
 
@@ -148,10 +148,10 @@ export const mobileContainer = style({
 });
 
 export const mobileBrandLink = style({
-  fontWeight: 'bold',
-  fontSize: vars.fontSize.lg,
+  fontWeight: tokens.typography.fontWeight.bold,
+  fontSize: tokens.typography.fontSize.lg,
   textDecoration: 'none',
-  color: vars.color.foreground,
+  color: tokens.colors.semantic.foreground,
 });
 
 export const headerIcon = style({

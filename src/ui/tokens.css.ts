@@ -59,11 +59,20 @@ export const tokens = createThemeContract({
       '6xl': null,
       '7xl': null,
     },
+    fontFamily: {
+      sans: null,
+      serif: null,
+      mono: null,
+      signature: null,
+    },
     fontWeight: {
+      light: null,
       normal: null,
       medium: null,
       semibold: null,
       bold: null,
+      extrabold: null,
+      black: null,
     },
     lineHeight: {
       tight: null,
@@ -156,11 +165,20 @@ export const lightTokens = createTheme(tokens, {
       '6xl': '3.75rem',
       '7xl': '4.5rem',
     },
+    fontFamily: {
+      sans: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',
+      serif: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
+      mono: 'ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace',
+      signature: '"Dancing Script", cursive',
+    },
     fontWeight: {
+      light: '300',
       normal: '400',
       medium: '500',
       semibold: '600',
       bold: '700',
+      extrabold: '800',
+      black: '900',
     },
     lineHeight: {
       tight: '1.25',
@@ -241,11 +259,20 @@ export const darkTokens = createTheme(tokens, {
       '6xl': '3.75rem',
       '7xl': '4.5rem',
     },
+    fontFamily: {
+      sans: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',
+      serif: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
+      mono: 'ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace',
+      signature: '"Dancing Script", cursive',
+    },
     fontWeight: {
+      light: '300',
       normal: '400',
       medium: '500',
       semibold: '600',
       bold: '700',
+      extrabold: '800',
+      black: '900',
     },
     lineHeight: {
       tight: '1.25',
