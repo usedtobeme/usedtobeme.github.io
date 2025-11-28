@@ -6,7 +6,6 @@ export const header = style({
   top: 0,
   zIndex: 50,
   width: '100%',
-  backgroundColor: tokens.colors.semantic.background,
   backdropFilter: 'blur(8px)',
 });
 

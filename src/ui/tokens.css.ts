@@ -64,6 +64,7 @@ export const tokens = createThemeContract({
       serif: null,
       mono: null,
       signature: null,
+      colorful: null,
     },
     fontWeight: {
       light: null,
@@ -96,6 +97,11 @@ export const tokens = createThemeContract({
     lg: null,
     xl: null,
   },
+  textShadows: {
+    sm: null,
+    md: null,
+    lg: null,
+  },
   breakpoints: {
     sm: null,
     md: null,
@@ -120,10 +126,10 @@ export const lightTokens = createTheme(tokens, {
   colors: {
     primitive: primitiveColors,
     semantic: {
-      background: 'transparent',
-      foreground: primitiveColors.dark,
-      primary: primitiveColors.dark,
-      primaryForeground: primitiveColors.light,
+      background: primitiveColors.dark,
+      foreground: primitiveColors.light,
+      primary: primitiveColors.glow,
+      primaryForeground: primitiveColors.dark,
       secondary: primitiveColors.light,
       secondaryForeground: primitiveColors.dark,
       muted: 'hsl(210 40% 96%)',
@@ -166,10 +172,11 @@ export const lightTokens = createTheme(tokens, {
       '7xl': '4.5rem',
     },
     fontFamily: {
-      sans: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',
+      sans: 'Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif',
       serif: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
       mono: 'ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace',
-      signature: '"Dancing Script", cursive',
+      signature: '"Sigmar", cursive',
+      colorful: '"Sigmar", cursive, system-ui, sans-serif',
     },
     fontWeight: {
       light: '300',
@@ -201,6 +208,11 @@ export const lightTokens = createTheme(tokens, {
     md: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
     lg: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
     xl: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+  },
+  textShadows: {
+    sm: '0 1px 2px rgba(0, 0, 0, 0.1)',
+    md: '0 2px 4px rgba(0, 0, 0, 0.15)',
+    lg: '0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1)',
   },
   breakpoints: {
     sm: '640px',
@@ -260,10 +272,11 @@ export const darkTokens = createTheme(tokens, {
       '7xl': '4.5rem',
     },
     fontFamily: {
-      sans: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',
+      sans: 'Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif',
       serif: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
       mono: 'ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace',
-      signature: '"Dancing Script", cursive',
+      signature: '"Sigmar", cursive',
+      colorful: '"Sigmar", cursive, system-ui, sans-serif',
     },
     fontWeight: {
       light: '300',
@@ -295,6 +308,11 @@ export const darkTokens = createTheme(tokens, {
     md: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
     lg: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
     xl: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+  },
+  textShadows: {
+    sm: '0 1px 2px rgba(0, 0, 0, 0.1)',
+    md: '0 2px 4px rgba(0, 0, 0, 0.15)',
+    lg: '0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1)',
   },
   breakpoints: {
     sm: '640px',

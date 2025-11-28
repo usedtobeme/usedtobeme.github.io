@@ -31,6 +31,10 @@ export default defineConfig({
         type: 'asset',
       },
       {
+        test: /\.md$/,
+        type: 'asset/source',
+      },
+      {
         test: /\.css$/,
         use: [
           {
@@ -82,11 +86,44 @@ export default defineConfig({
         minimizerOptions: { targets },
       }),
     ],
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+          priority: 10,
+        },
+        react: {
+          test: /[\\/]node_modules[\\/](react|react-dom|react-router)[\\/]/,
+          name: 'react',
+          chunks: 'all',
+          priority: 20,
+        },
+        ui: {
+          test: /[\\/]node_modules[\\/]@radix-ui[\\/]/,
+          name: 'radix-ui',
+          chunks: 'all',
+          priority: 15,
+        },
+        three: {
+          test: /[\\/]node_modules[\\/](@react-three|three)[\\/]/,
+          name: 'three',
+          chunks: 'all',
+          priority: 15,
+        },
+      },
+    },
   },
   experiments: {
     css: true,
   },
   devServer: {
     historyApiFallback: true,
+    static: {
+      directory: path.join(__dirname, 'src/data'),
+      publicPath: '/src/data',
+    },
   },
 });

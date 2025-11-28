@@ -3,7 +3,7 @@ import type React from 'react';
 import { text } from './Text.css';
 
 export interface TextProps {
-  variant?: 'default' | 'signature' | 'colorful';
+  variant?: 'default' | 'signature' | 'colorful' | 'caption';
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';
   size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   children: React.ReactNode;

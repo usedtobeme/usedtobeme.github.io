@@ -8,4 +8,5 @@ export const mainWrapper = style({
   overflow: 'auto',
   justifyContent: 'center',
   alignItems: 'center',
+  paddingTop: '3.5rem', // Account for fixed header height
 });

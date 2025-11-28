@@ -25,11 +25,7 @@ export const Header = () => {
           <NavigationMenu.List className={navigationList}>
             <NavigationMenu.Item>
               <NavigationMenu.Link asChild>
-                <Link
-                  to="/leadership"
-                  className={iconOnlyLink}
-                  aria-label="Leadership"
-                >
+                <Link to="/blog" className={iconOnlyLink} aria-label="Blog">
                   <AnimatedIcon Icon={StarIcon} size="xlarge" />
                 </Link>
               </NavigationMenu.Link>

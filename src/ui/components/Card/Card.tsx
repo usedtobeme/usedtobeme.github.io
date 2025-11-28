@@ -13,11 +13,11 @@ type CardVariants = RecipeVariants<typeof card>;
 
 export interface CardProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    CardVariants {}
+    NonNullable<CardVariants> {}
 
 const Card = React.forwardRef<HTMLDivElement, CardProps>(
-  ({ className, variant, ...props }, ref) => (
-    <div ref={ref} className={card({ variant })} {...props} />
+  ({ className, variant, size, ...props }, ref) => (
+    <div ref={ref} className={card({ variant, size })} {...props} />
   ),
 );
 Card.displayName = 'Card';

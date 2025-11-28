@@ -34,6 +34,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Generate blog posts
+        run: pnpm run generate-blog
+
       - name: Build main application
         run: pnpm run build
 

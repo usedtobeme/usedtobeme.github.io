@@ -69,19 +69,19 @@ const colorPalette: Record<string, string> = {
 
 export const lightTheme = createTheme(vars, {
   color: {
-    background: 'transparent',
-    foreground: colorPalette.dark,
-    primary: colorPalette.dark,
-    primaryForeground: colorPalette.light,
+    background: colorPalette.dark,
+    foreground: colorPalette.light,
+    primary: colorPalette.glow,
+    primaryForeground: colorPalette.dark,
     secondary: colorPalette.light,
     secondaryForeground: colorPalette.dark,
-    muted: 'hsl(210 40% 96%)',
-    mutedForeground: 'hsl(215.4 16.3% 46.9%)',
+    muted: 'rgba(255, 255, 255, 0.1)',
+    mutedForeground: 'rgba(255, 255, 255, 0.7)',
     accent: colorPalette.accent,
     accentForeground: colorPalette.dark,
     destructive: colorPalette.destructive,
     destructiveForeground: colorPalette.light,
-    border: colorPalette.dark,
+    border: 'rgba(255, 255, 255, 0.2)',
     input: colorPalette.dark,
     ring: colorPalette.dark,
     card: 'transparent',
@@ -124,7 +124,7 @@ export const lightTheme = createTheme(vars, {
 
 export const darkTheme = createTheme(vars, {
   color: {
-    background: 'transparent',
+    background: colorPalette.dark,
     foreground: colorPalette.light,
     primary: colorPalette.light,
     primaryForeground: colorPalette.dark,
@@ -136,7 +136,7 @@ export const darkTheme = createTheme(vars, {
     accentForeground: colorPalette.accentLight,
     destructive: colorPalette.destructive,
     destructiveForeground: colorPalette.accentLight,
-    border: colorPalette.accentDark,
+    border: 'rgba(255, 255, 255, 0.2)',
     input: 'hsl(217.2 32.6% 17.5%)',
     ring: 'hsl(212.7 26.8% 83.9%)',
     card: 'hsl(222.2 84% 4.9%)',

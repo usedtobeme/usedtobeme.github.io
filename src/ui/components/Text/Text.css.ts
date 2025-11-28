@@ -23,25 +23,34 @@ export const text = recipe({
       },
       signature: {
         fontFamily: tokens.typography.fontFamily.signature,
-        fontSize: '2.5rem',
-        fontWeight: tokens.typography.fontWeight.semibold,
+        fontSize: '4rem',
+        fontWeight: tokens.typography.fontWeight.normal,
         color: tokens.colors.semantic.primary,
         letterSpacing: '0.02em',
-        textShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+        lineHeight: 1,
+        textShadow: tokens.textShadows.lg,
       },
       colorful: {
-        fontFamily: tokens.typography.fontFamily.sans,
-        fontSize: '4rem',
-        fontWeight: tokens.typography.fontWeight.black,
+        fontFamily: tokens.typography.fontFamily.colorful,
+        fontSize: '3.5rem',
+        fontWeight: tokens.typography.fontWeight.normal,
         background:
-          'linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7, #fab1a0)',
-        backgroundSize: '600% 600%',
+          'linear-gradient(45deg, #59c1c9ff, #fab1a0)',
+        backgroundSize: '100% 100%',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
         backgroundClip: 'text',
         animation: `${gradientShift} 3s ease infinite`,
         letterSpacing: '-0.02em',
-        lineHeight: 1.1,
+        lineHeight: 0.85,
+        filter: `drop-shadow(${tokens.textShadows.md})`,
+      },
+      caption: {
+        fontFamily: tokens.typography.fontFamily.sans,
+        fontSize: tokens.typography.fontSize.sm,
+        fontWeight: tokens.typography.fontWeight.normal,
+        color: tokens.colors.semantic.mutedForeground,
+        lineHeight: tokens.typography.lineHeight.normal,
       },
     },
     size: {
@@ -81,19 +90,19 @@ export const text = recipe({
     {
       variants: { variant: 'signature', size: 'h1' },
       style: {
-        fontSize: '3.5rem',
+        fontSize: '7rem',
       },
     },
     {
       variants: { variant: 'signature', size: 'h2' },
       style: {
-        fontSize: '3rem',
+        fontSize: '6rem',
       },
     },
     {
       variants: { variant: 'signature', size: 'h3' },
       style: {
-        fontSize: '2.5rem',
+        fontSize: '5.5rem',
       },
     },
     {
