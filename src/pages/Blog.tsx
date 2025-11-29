@@ -5,7 +5,7 @@ export function Blog() {
   return (
     <div style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
       <header style={{ marginBottom: '3rem', textAlign: 'center' }}>
-        <h1>Leadership & Technology Blog</h1>
+        <Text as="h1" size="h1">Leadership & Technology Blog</Text>
         <Text>
           Insights on engineering leadership, architecture decisions, and
           building scalable systems.

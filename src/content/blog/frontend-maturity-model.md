@@ -172,6 +172,7 @@ The FMM breaks front-end development into eleven distinct dimensions. This decom
 - Not just "implement testing" but "80% unit test coverage on new code"
 - Not just "adopt TypeScript" but "all new features written in TypeScript with strict mode"
 #### Template for Goal Setting:
+```
 Category: [Name]
 Current Stage: [Stage]
 Target Stage: [Stage]
@@ -192,6 +193,7 @@ Expected Challenges:
 
 Resources Required:
 - [Time, people, budget]
+```
 ### Action Planning
 **Objective**: Convert goals into executable plans
 #### Components of Effective Action Plans:
@@ -353,18 +355,17 @@ The Front End Maturity Model is not a destination but a navigation tool. Its val
 - **Progress**: A way to measure and communicate improvements over time
 - **Alignment**: A common language across teams and with leadership
 
->>>
+
 **Remember**:
 - Start with an honest assessment
 - Prioritize based on your specific business context
 - Set realistic, incremental goals
 - Measure progress and adapt
 - Celebrate wins along the way
->>>
+
 
 The organizations that succeed with this model treat it as a living framework—regularly reassessing, adjusting priorities, and refining definitions as both their business and the industry evolve.
 Your front-end maturity journey is unique to your organization. Use this framework as a thinking tool, not a rigid prescription, and you'll find it helps transform abstract improvement desires into concrete, achievable progress.
 
->>>
+
 *I designed this framework to be adaptable. Take what works for your context, modify what doesn't, and make it your own.*
->>>

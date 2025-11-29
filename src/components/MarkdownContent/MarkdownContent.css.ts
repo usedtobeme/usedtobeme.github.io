@@ -54,33 +54,52 @@ globalStyle(`${markdownWrapper} li`, {
 
 globalStyle(`${markdownWrapper} code`, {
   backgroundColor: tokens.colors.semantic.muted,
-  color: tokens.colors.semantic.mutedForeground,
-  padding: '0.125rem 0.25rem',
-  borderRadius: tokens.borderRadius.sm,
-  fontSize: '0.9em',
+  color: tokens.colors.semantic.foreground,
+  padding: '0.125rem 0.375rem',
+  borderRadius: tokens.borderRadius.md,
+  fontSize: '0.875em',
   fontFamily: tokens.typography.fontFamily.mono,
+  border: `1px solid ${tokens.colors.semantic.border}`,
+  fontWeight: tokens.typography.fontWeight.medium,
 });
 
 globalStyle(`${markdownWrapper} pre`, {
-  backgroundColor: tokens.colors.semantic.muted,
-  padding: '1rem',
+  backgroundColor: tokens.colors.semantic.card,
+  padding: tokens.spacing.lg,
   borderRadius: tokens.borderRadius.lg,
   overflow: 'auto',
-  marginBottom: '1rem',
+  marginBottom: tokens.spacing.lg,
+  border: `1px solid ${tokens.colors.semantic.border}`,
+  boxShadow: tokens.shadows.sm,
+  position: 'relative',
 });
 
 globalStyle(`${markdownWrapper} pre code`, {
   backgroundColor: 'transparent',
   padding: 0,
+  border: 'none',
+  fontSize: tokens.typography.fontSize.sm,
+  lineHeight: tokens.typography.lineHeight.relaxed,
+  fontWeight: tokens.typography.fontWeight.normal,
 });
 
 globalStyle(`${markdownWrapper} blockquote`, {
   borderLeft: `4px solid ${tokens.colors.semantic.accent}`,
-  paddingLeft: '1rem',
+  paddingLeft: tokens.spacing.lg,
+  paddingRight: tokens.spacing.md,
+  paddingTop: tokens.spacing.sm,
+  paddingBottom: tokens.spacing.sm,
   marginLeft: 0,
-  marginBottom: '1rem',
+  marginRight: 0,
+  marginBottom: tokens.spacing.lg,
+  marginTop: tokens.spacing.lg,
+  backgroundColor: tokens.colors.semantic.muted,
+  borderRadius: tokens.borderRadius.md,
   fontStyle: 'italic',
+  fontSize: tokens.typography.fontSize.lg,
+  lineHeight: tokens.typography.lineHeight.relaxed,
   color: tokens.colors.semantic.mutedForeground,
+  position: 'relative',
 });
 
 globalStyle(`${markdownWrapper} a`, {

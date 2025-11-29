@@ -113,7 +113,7 @@ export const cardTitle = style({
 
 export const cardDescription = style({
   fontSize: tokens.typography.fontSize.sm,
-  color: tokens.colors.semantic.mutedForeground,
+  color: tokens.colors.semantic.secondary,
   lineHeight: tokens.typography.lineHeight.normal,
 });
 
