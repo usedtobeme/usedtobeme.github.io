@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
 import { clsx } from 'clsx';
+import type { ReactNode } from 'react';
 import * as styles from './Chip.css';
 
 export interface ChipProps {
@@ -21,7 +21,7 @@ export function Chip({
         styles.chip,
         styles.variants[variant],
         styles.sizes[size],
-        className
+        className,
       )}
     >
       {children}

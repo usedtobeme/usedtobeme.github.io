@@ -10,7 +10,7 @@ const KONAMI_CODE = [
   'ArrowLeft',
   'ArrowRight',
   'KeyB',
-  'KeyA'
+  'KeyA',
 ];
 
 interface UseConfettiTriggerOptions {
@@ -34,13 +34,19 @@ export function useConfettiTrigger(options: UseConfettiTriggerOptions = {}) {
   const checkSequence = () => {
     const sequence = sequenceRef.current;
     const isComplete = sequence.length === KONAMI_CODE.length;
-    const isCorrect = sequence.every((key, index) => key === KONAMI_CODE[index]);
+    const isCorrect = sequence.every(
+      (key, index) => key === KONAMI_CODE[index],
+    );
 
     if (isComplete && isCorrect) {
       setIsActivated(true);
       onSuccess?.();
       resetSequence();
-    } else if (isComplete || !KONAMI_CODE[sequence.length - 1] || sequence[sequence.length - 1] !== KONAMI_CODE[sequence.length - 1]) {
+    } else if (
+      isComplete ||
+      !KONAMI_CODE[sequence.length - 1] ||
+      sequence[sequence.length - 1] !== KONAMI_CODE[sequence.length - 1]
+    ) {
       resetSequence();
     }
   };
@@ -57,7 +63,7 @@ export function useConfettiTrigger(options: UseConfettiTriggerOptions = {}) {
       }
 
       sequenceRef.current.push(event.code);
-      
+
       // Clear any existing timeout
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);

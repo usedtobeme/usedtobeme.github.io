@@ -1,6 +1,6 @@
 import { Card } from '@ui/components/Card/Card';
-import { Text } from '@ui/components/Text';
 import { Chip } from '@ui/components/Chip';
+import { Text } from '@ui/components/Text';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
 

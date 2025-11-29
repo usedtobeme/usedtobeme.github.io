@@ -24,7 +24,8 @@ globalStyle('body', {
 globalStyle('body', {
   backgroundColor: tokens.colors.semantic.background,
   color: tokens.colors.semantic.foreground,
-  fontFamily: 'Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif',
+  fontFamily:
+    'Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif',
   lineHeight: '1.5',
   fontWeight: '400',
   letterSpacing: '0.025em',

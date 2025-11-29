@@ -7,13 +7,11 @@ export const Hero = () => {
         Iki Amortegui
       </Text>
       <Text as="h2" variant="colorful">
-        DIGITAL
-        <br />
-        SEEKER
+        BUILDER OF WEB THINGS
       </Text>
       <Text>
-        Building the future of web, one pixel-perfect experience at a time. Chat
-        with my AI assistant to learn more about what I do.
+        I make products that work well and feel right. Curious about what I've
+        built? Chat with my AI assistant.
       </Text>
     </section>
   );

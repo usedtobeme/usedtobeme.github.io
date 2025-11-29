@@ -1,11 +1,11 @@
-import { useState, lazy, Suspense } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { useConfettiTrigger } from './useConfettiTrigger';
 
 // Lazy load the WebGL confetti component
-const WebGLConfetti = lazy(() => 
-  import('./WebGLConfetti').then(module => ({
-    default: module.WebGLConfetti
-  }))
+const WebGLConfetti = lazy(() =>
+  import('./WebGLConfetti').then((module) => ({
+    default: module.WebGLConfetti,
+  })),
 );
 
 export function ConfettiEasterEgg() {
@@ -28,8 +28,8 @@ export function ConfettiEasterEgg() {
 
   return (
     <Suspense fallback={null}>
-      <WebGLConfetti 
-        isActive={showConfetti} 
+      <WebGLConfetti
+        isActive={showConfetti}
         onComplete={handleConfettiComplete}
       />
     </Suspense>

@@ -5,17 +5,17 @@ import { recipe } from '@vanilla-extract/recipes';
 const cardBase = style({
   borderRadius: tokens.borderRadius.lg,
   color: tokens.colors.semantic.cardForeground,
-  
+
   // Liquid glass background
   background: 'rgba(255, 255, 255, 0.1)',
   backdropFilter: 'blur(20px) saturate(180%)',
   WebkitBackdropFilter: 'blur(20px) saturate(180%)',
   border: '1px solid rgba(255, 255, 255, 0.2)',
   boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
-  
+
   // Gradient overlay for more depth
   position: 'relative',
-  
+
   '::before': {
     content: '""',
     position: 'absolute',
@@ -77,7 +77,7 @@ const cardSizeVariants = styleVariants({
     // Firefox scrollbar styling
     scrollbarWidth: 'thin',
     scrollbarColor: 'rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1)',
-    
+
     // Update the gradient overlay border radius for xl
     '::before': {
       borderRadius: tokens.borderRadius.xl,

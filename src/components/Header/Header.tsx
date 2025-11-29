@@ -33,9 +33,9 @@ export const Header = () => {
             <NavigationMenu.Item>
               <NavigationMenu.Link asChild>
                 <Link
-                  to="/portfolio"
+                  to="/profile"
                   className={iconOnlyLink}
-                  aria-label="Portfolio"
+                  aria-label="Profile"
                 >
                   <AnimatedIcon Icon={PersonIcon} size="xlarge" />
                 </Link>

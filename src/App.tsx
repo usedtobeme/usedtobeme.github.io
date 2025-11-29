@@ -28,8 +28,8 @@ const ObservabilityD3 = lazy(() =>
 const WebGLMedia = lazy(() =>
   import('./pages/WebGLMedia').then((m) => ({ default: m.WebGLMedia })),
 );
-const Portfolio = lazy(() =>
-  import('./pages/Portfolio').then((m) => ({ default: m.Portfolio })),
+const Profile = lazy(() =>
+  import('./pages/Profile').then((m) => ({ default: m.Profile })),
 );
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
           <Route path="webgl-media" element={<WebGLMedia />} />
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:slug" element={<BlogPost />} />
-          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
       </Routes>
     </Suspense>

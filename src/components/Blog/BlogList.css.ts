@@ -1,5 +1,5 @@
-import { style } from '@vanilla-extract/css';
 import { tokens } from '@ui/tokens.css';
+import { style } from '@vanilla-extract/css';
 
 export const blogGrid = style({
   display: 'grid',
@@ -13,7 +13,7 @@ export const blogLink = style({
   display: 'block',
   height: '100%',
   transition: 'transform 0.2s ease',
-  
+
   ':hover': {
     transform: 'translateY(-2px)',
   },
